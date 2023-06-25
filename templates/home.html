@@ -1,0 +1,68 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+        
+body{
+    background-color: white;
+}
+
+.img1{
+    margin-top: 100px;
+    height: 500px;
+    width: 600px;
+    margin-right: 100px;
+    margin-left: 60px;
+    background-blend-mode: normal;
+}
+.back{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+    </style>
+
+</head>
+<body>
+    <!-- <div>
+        <h1>
+            Welcome to Diabetes Prediction System
+        </h1>
+        <form action="predict">
+            <input type="submit" value="Lets get started">
+        </form>
+    </div> -->
+
+
+    <div style="display: flex; flex-direction: row; margin: 20px;" class="back">
+        <div>
+            <img  style=" background-blend-mode:multiply;" class="img1" src="{% static 'DiabetesPrediction/images/img1.jpg'%}" alt="">
+        </div>
+        <div>
+            <h1 style="margin-top: 140px; margin-left: 38px; font-family: Arial, Helvetica, sans-serif;"> Welcome to Diabetes Prediction System</h1>
+            <p style="margin: 40px; font-size: 17px; font-family: 'Open-sans', sans-serif;
+            ;">Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Glucose is your body’s main source of energy. Your body can make glucose, but glucose also comes from the food you eat.
+
+                Insulin is a hormone made by the pancreas that helps glucose get into your cells to be used for energy. If you have diabetes, your body doesn’t make enough—or any—insulin, or doesn’t use insulin properly. Glucose then stays in your blood and doesn’t reach your cells.</p>
+
+                <p style="margin: 40px; font-size: 17px; font-family: 'Open-sans', sans-serif;
+                ;">
+                    Follow the below button to find out if you have diabetes or not by filling the given form 
+                </p>
+                <form action="predict">
+                    <input class="btn" style="margin-left: 40px; height: 50px; width: 170px; border-radius: 10px; border: 1px black solid; background-color: rgb(255, 255, 255); box-shadow: 5px black;" type="submit" value="Lets get started">
+                </form>
+        </div>
+    </div>
+</body>
+</html>
